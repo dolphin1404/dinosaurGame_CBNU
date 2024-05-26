@@ -248,13 +248,6 @@ int main() {
     // 게임 오버 화면 표시
     DrawGameOver(score);
 
-    // 게임 오버 후 아무 키나 누르면 다시 시작
-    while (true) {
-      if (_kbhit()) {
-        _getch();  // 키 입력 소비
-        break;
-      }
-    }
   }
 
   return 0;
